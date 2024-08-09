@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/productspage.css" />
+
+    <title>Product page</title>
+  </head>
+  <body>
+    <!-- NAVBAR  -->
+    <header>
+      <nav>
+        <logo id="logo"> CHARM</logo>
+        <input
+          placeholder=" Natural radiane...."
+          type="text"
+          name=""
+          id="input"
+        />
+
+        <div id="navlinks">
+          <ul>
+            <a href="cart.html">Bag</a>
+            <span id="cart-span">0</span>
+          </ul>
+          <ul class="hide">
+            <a href="productPage.Html">Products</a>
+          </ul>
+          <ul class="hide">
+            <a href="index.html">About</a>
+          </ul>
+        </div>
+        <img onclick="showSidebar()" src="images/menu.png" alt="" />
+      </nav>
+      <!-- sidebar -->
+      <div class="sidebar">
+        <img onclick="hideSidebar()" src="images/close.png" alt="" />
+        <ul id="cart">
+          <a class="" href="/cart.html">Cart </a>
+        </ul>
+        <ul>
+          <a href="">Signup</a>
+        </ul>
+        <ul>
+          <a href="productPage.Html">More</a>
+        </ul>
+        <ul>
+          <a href="">About</a>
+        </ul>
+      </div>
+    </header>
+    <div class="results">
+      <ul></ul>
+    </div>
+    <!-- prodcuts  -->
+    <div class="main-body">
+      <h1>Our Top Products</h1>
+
+      <div class="prodcuts-container"></div>
+      <div class="overlay"></div>
+    </div>
+
+    <script src="scripts/productpage.js"></script>
+  </body>
+</html>

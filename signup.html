@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/signup.css" />
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <!-- NAV SECTION  -->
+
+    <header>
+      <nav>
+        <div id="logo">
+          <h1>CHARM</h1>
+        </div>
+        <div class="navlinks">
+          <ul>
+            <a href="">Products</a>
+          </ul>
+          <ul>
+            <a href="">About us </a>
+          </ul>
+          <ul>
+            <a href="">Help</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- PAGE SECTION  -->
+
+    <div class="main">
+      <div class="signup-page-container">
+        <div class="bait">
+          <h1>JOIN US</h1>
+          <h2>AND GET 'VIP MEMBERSHIP'</h2>
+        </div>
+        <div class="signup-layout">
+          <div>
+            <h4>First Name</h4>
+            <input placeholder="John" type="text" name="" id="first-name" />
+            <p id="firstName-msg">This field is mandatory!</p>
+          </div>
+
+          <div>
+            <h4>Last Name</h4>
+            <input placeholder="Doe" type="text" id="last-name" />
+            <p id="lastName-msg">This field is mandatory!</p>
+          </div>
+          <div>
+            <h4>Date of Birth</h4>
+            <input placeholder="mm/yy/dd" type="date" id="dob" />
+            <p id="dob-msg">This field is mandatory!</p>
+          </div>
+          <div>
+            <h4>Your email</h4>
+            <input placeholder="xyz@gmail.com" type="text" id="email" />
+            <p id="email-msg">This field is mandatory!</p>
+          </div>
+          <button onclick="showError()" id="btn">SUMBIT</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/signup.js"></script>
+  </body>
+</html>
