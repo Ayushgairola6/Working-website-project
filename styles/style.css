@@ -9,10 +9,10 @@ body {
   overflow-x: hidden;
 }
 
-@font-face {
+/* @font-face {
   font-family: "neue";
   src: url("/font/BebasNeue-Regular.ttf");
-}
+} */
 
 /* styling for product display section  */
 
@@ -32,7 +32,7 @@ nav input {
 }
 #logo {
   margin-left: 6.7vw;
-  font-family: "neue";
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
 }
 #navlinks {
@@ -129,7 +129,7 @@ nav img {
 }
 .headings {
   position: absolute;
-  right: 6%;
+  right: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,32 +137,35 @@ nav img {
   top: 0;
   font-size: 18px;
   font-weight: 400;
-  margin-top: 5vh;
-  font-family: "neue";
+  margin-top: 8vh;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .headings h1 {
-  font-size: 30vh;
+  font-size: 25vh;
   color: gold;
   padding: 0;
 }
 
 .headings h2 {
   color: gold;
-  margin-left: 59.8vw;
-  font-size: 5vh;
+  margin-left: 50.8vw;
+  font-size: 4vh;
 }
 #subheading {
   position: absolute;
-  bottom: 35%;
+  bottom: 25%;
+  display: none;
   color: black;
   left: 0%;
   height: 18vh;
-  width: 16vw;
+  width: 18vw;
   font-size: 15px;
   margin-left: 4vw;
-  font-family: "neue";
+  /* font-family: "neue"; */
   transition: transform 0.2s ease-in;
   cursor: pointer;
+  font-size: small;
+  /* background-color: pink; */
 }
 #subheading:hover {
   transform: scale(1.1);
@@ -253,7 +256,7 @@ nav img {
   font-size: 4em;
   opacity: 0.9;
   position: relative;
-  /* font-family: "neue"; */
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
 }
 .main h1::after {
   content: "";
@@ -268,57 +271,74 @@ nav img {
 .main h1:hover::after {
   width: 100%;
 }
-#product {
-  padding: 3vw;
-  box-shadow: 3px 3px 3px black;
-  font-family: "neue";
-  border-top-left-radius: 25px;
-  background-color: rgb(240, 239, 239);
+.product_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  padding: 2px 2px;
 }
-#product div {
+#product {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  color: black;
-  width: 30vh;
-  margin: 6px;
-  background-color: rgb(240, 213, 95);
-}
-#product button {
-  background-color: rgb(137, 177, 77);
-  color: white;
-  padding: 6px;
-  border-radius: 15px;
-  margin-top: 3px;
-  box-shadow: 2px 2px 2px rgb(17, 17, 17);
-  font-weight: 700;
-  transition: transform 0.3s ease-in-out;
+  gap: 1em;
+  height: fit-content;
+  padding: 2px 2px;
+  background-color: white;
+  min-height: 25vh;
+  padding: 5px 5px;
+  border-top-left-radius: 15px;
+  box-shadow: 2px 2px 3px black;
 }
 #product img {
-  height: 30vh;
-  width: 30vh;
+  border-top-left-radius: 15px;
+  height: 8rem;
+  width: 8rem;
+  transition: transform 0.6s ease-in-out;
+}
+#explanation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: yellow; */
+}
+#explanation div {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3em;
+}
+#product h3 {
+  background-color: rgb(240, 240, 23);
   border: 1px solid black;
-  margin: auto;
-  /* border-top-left-radius: 25px; */
-  box-shadow: 3px 3px 3px black;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  padding: 1px 4px;
+}
+#product span {
+  border-radius: 15px;
+  padding: 1px 4px;
+  border: 1px solid black;
+  background-color: rgb(253, 253, 35);
+}
+#product button {
+  background-color: greenyellow;
+  padding: 1px 5px;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 2px 2px 2px black;
 }
 #product button:hover {
   transform: scale(1.1);
+  box-shadow: 2px 2px 2px greenyellow;
+  color: palevioletred;
   background-color: white;
-  color: purple;
-  font-weight: 700;
-  box-shadow: 2px 2px 2px rgb(190, 47, 71);
-  cursor: pointer;
-  transform: scale(1.1);
-}
-#explanation div {
-  background-color: rgb(245, 244, 247);
-}
-#product h3 {
-  font-weight: 900;
 }
 #see-more-btn {
   background-color: gold;
@@ -339,7 +359,7 @@ nav img {
   color: black;
 }
 #product img:hover {
-  transform: scale(1.6);
+  transform: scale(1.5);
 }
 #explanation {
   display: flex;
@@ -351,6 +371,7 @@ nav img {
 
 .review-page h1 {
   padding-top: 15px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .review-container {
@@ -431,7 +452,7 @@ nav img {
   flex-wrap: wrap;
   padding: 2vw;
   gap: 5px;
-  font-family: "neue";
+  /* font-family:"a"; */
 }
 
 .about input {
@@ -485,11 +506,12 @@ footer {
   padding: 2px 19px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 footer h6 {
   font-size: 70px;
-  margin-right: 17vw;
+  margin: auto;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .footer-links {
   /* border: 1px solid rebeccapurple; */
@@ -516,31 +538,20 @@ footer a {
     display: none;
   }
   .headings {
-    margin-top: 11vh;
+    margin-top: 20vh;
     left: 0;
     right: 0%;
   }
   .headings h1 {
-    font-size: 10em;
+    font-size: 3.5em;
   }
   .headings h2 {
-    font-size: 2.5em;
+    margin-top: 2vh;
+    font-size: 1em;
     margin-left: 4vw;
   }
   #subheading {
-    font-size: 15px;
-    display: block;
-    width: 70%;
-    left: 9%;
-    color: black;
-    /* filter: blur(2px); */
-    /* background-color: rgb(212, 212, 212); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    flex-wrap: wrap;
-    font-weight: 700;
+    display: none;
   }
   .hero button {
     bottom: 8%;
@@ -551,33 +562,12 @@ footer a {
     gap: 10vw;
   }
   .main h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding: 2px auto;
   }
+
   #product {
-    padding: 4px;
-  }
-  #product div {
-    width: 15vh;
-    height: 15vh;
-    font-size: 15px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 5px;
-    background-color: transparent;
-  }
-  #product img {
-    height: 10vh;
-    width: 10vh;
-    margin-left: 29px;
-    margin-top: 4px;
-  }
-  #product button {
-    padding: 4px;
-    margin-top: 5px;
-  }
-  .last {
-    display: none;
+    height: 20vh;
   }
   .review-container {
     gap: 10vw;
@@ -594,34 +584,36 @@ footer a {
   }
 
   .about h1 {
-    padding-left: 19vw;
+    font-size: 3em;
+    padding-left: 17vw;
   }
   .about p {
-    top: 23%;
+    top: 15%;
     width: 50vw;
-    right: 15%;
+    right: 25%;
     font-size: 10px;
   }
   .about h4 {
-    top: 65%;
-    right: 26%;
+    font-size: 1.3em;
+    top: 62%;
+    right: 40%;
   }
   .about input {
-    top: 72%;
+    top: 66%;
     right: 22%;
     width: 40vw;
     padding: 10px;
   }
   #blank-message {
     position: absolute;
-    top: 75.5%;
+    top: 70%;
     color: red;
     display: none;
     font-size: small;
-    right: 41.2%;
+    right: 38%;
   }
   .about button {
-    top: 79%;
+    top: 75%;
     right: 55%;
     padding: 3px;
     height: 3.4vh;
@@ -634,294 +626,12 @@ footer a {
   footer h6 {
     font-size: 30px;
   }
+  .footer-links {
+    gap: 7px;
+  }
   .footer-links a {
     font-size: 7px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 0px;
-    padding: 2px;
   }
 }
 
 /* for mobile  */
-@media (max-width: 720px) {
-  nav img {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-  .headings {
-    margin-top: 18vh;
-    left: 0;
-    right: 0%;
-  }
-  .headings h1 {
-    font-size: 6.5em;
-  }
-  .headings h2 {
-    font-size: 1.5em;
-    margin-left: 4vw;
-  }
-  #subheading {
-    display: block;
-    width: 72%;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    flex-wrap: wrap;
-    font-weight: 700;
-  }
-  .hero button {
-    bottom: 8%;
-    width: 19vw;
-    left: 25%;
-  }
-  .main {
-    gap: 10vw;
-  }
-  .main h1 {
-    font-size: 1.4em;
-    padding: 2px auto;
-  }
-  #product {
-    padding: 4px;
-  }
-  #product div {
-    width: 15vh;
-    height: 15vh;
-    font-size: 15px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 5px;
-  }
-  #product img {
-    height: 10vh;
-    width: 10vh;
-    margin-left: 29px;
-    margin-top: 4px;
-  }
-  #product button {
-    padding: 4px;
-    margin-top: 5px;
-  }
-  .last {
-    display: none;
-  }
-  .review-container {
-    gap: 10vw;
-  }
-  .review-container div {
-    height: 60vh;
-  }
-  #customer-image {
-    height: 60%;
-    width: 35vw;
-  }
-  .review-container p {
-    font-size: 14px;
-  }
-  /* .about{} */
-  .about h1 {
-    font-size: 10vh;
-    padding-left: 19vw;
-  }
-  .about p {
-    top: 23%;
-    width: 50vw;
-    right: 20%;
-    font-size: 10px;
-  }
-  .about h4 {
-    top: 65%;
-    right: 26%;
-  }
-  .about input {
-    top: 72%;
-    right: 22%;
-    width: 40vw;
-    padding: 10px;
-  }
-  #blank-message {
-    position: absolute;
-    top: 75.5%;
-    color: red;
-    display: none;
-    font-size: small;
-    right: 41.2%;
-  }
-  .about button {
-    top: 79%;
-    right: 55%;
-    padding: 3px;
-    height: 3.4vh;
-    width: 13vw;
-    border: none;
-  }
-  footer {
-    padding: 7px 4px;
-  }
-  footer h6 {
-    font-size: 30px;
-  }
-  .footer-links a {
-    font-size: 10px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 0px;
-    padding: 2px;
-  }
-}
-@media (max-width: 400px) {
-  nav img {
-    display: block;
-  }
-  .hide {
-    display: none;
-  }
-  .headings {
-    margin-top: 18vh;
-    left: 0;
-    right: 3%;
-  }
-  .hero button {
-    right: 20%;
-  }
-  .headings h1 {
-    font-size: 4.2em;
-  }
-  .headings h2 {
-    font-size: 1.1em;
-    margin-left: 4vw;
-  }
-  #subheading {
-    display: block;
-    width: 72%;
-    color: rgb(34, 8, 59);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    flex-wrap: wrap;
-    /* font-weight: 700; */
-    font-size: smaller;
-    bottom: 30%;
-    left: 15%;
-    opacity: 0.9;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  .hero button {
-    bottom: 8%;
-    width: 19vw;
-    /* right: 2px; */
-  }
-  .main {
-    gap: 5em;
-  }
-  .main h1 {
-    font-size: 1.4em;
-    padding: 2px auto;
-  }
-  #product {
-    padding: 3px 3px;
-    width: 20vh;
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #product div {
-    width: 17vh;
-    height: 17vh;
-    font-size: 10px;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  #product img {
-    height: 10vh;
-    width: 10vh;
-    margin-left: 29px;
-    margin-top: 4px;
-  }
-  #product button {
-    padding: 4px;
-    margin-top: 5px;
-  }
-  .last {
-    display: none;
-  }
-  .review-container {
-    gap: 10vw;
-  }
-  .review-container div {
-    height: 60vh;
-  }
-  #customer-image {
-    height: 60%;
-    width: 35vw;
-  }
-  .review-container p {
-    font-size: 12px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  }
-  /* .about{} */
-  .about h1 {
-    font-size: 10vh;
-    padding-left: 25vw;
-  }
-  .about p {
-    top: 23%;
-    width: 50vw;
-    right: 20%;
-    font-size: 8px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .about h4 {
-    top: 67%;
-    right: 23%;
-  }
-  .about input {
-    top: 77%;
-    right: 25%;
-    width: 40vw;
-    padding: 10px;
-  }
-  #blank-message {
-    position: absolute;
-    top: 81%;
-    color: red;
-    display: none;
-    font-size: small;
-    right: 40%;
-  }
-  .about button {
-    top: 86%;
-    right: 55%;
-    padding: 3px;
-    height: 3.4vh;
-    width: 13vw;
-    border: none;
-  }
-  footer {
-    padding: 7px;
-  }
-  footer h6 {
-    font-size: 35px;
-  }
-  .footer-links a {
-    font-size: 10px;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    gap: 0px;
-    padding: 2px;
-  }
-}
