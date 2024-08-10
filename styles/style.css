@@ -530,6 +530,8 @@ footer a {
   color: white;
   text-decoration: none;
 }
+
+/* for devices such as tablets , small monitors  */
 @media (max-width: 900px) {
   nav img {
     display: block;
@@ -635,13 +637,92 @@ footer a {
 }
 
 /* for mobile  */
-@media(max-width:400px){
-
-.headings h1{
-  font-size:2em;
-}
-  .headings h2{
-    font-size:0.4em;
+@media (max-width: 400px) {
+  .headings h1 {
+    font-size: 2.6em;
   }
-  
+  .headings h2 {
+    font-size: 0.7em;
+  }
+  .main {
+    gap: 3vw;
+  }
+  .main h1 {
+    font-size: 1.1em;
+    padding: 2px auto;
+  }
+  .product_container {
+    gap: 2em;
+  }
+  #product {
+    height: 25vh;
+    font-size: small;
+  }
+  #product img {
+    height: 4rem;
+  }
+  .review-container {
+    gap: 10vw;
+  }
+  .review-container div {
+    height: 60vh;
+  }
+  #customer-image {
+    height: 60%;
+    width: 35vw;
+  }
+  .review-container p {
+    font-size: 0.7em;
+  }
+
+  .about h1 {
+    font-size: 2em;
+    padding-left: 17vw;
+  }
+  .about p {
+    top: 15%;
+    width: 50vw;
+    right: 28%;
+    font-size: 7.5px;
+  }
+  .about h4 {
+    font-size: 1.3em;
+    top: 62%;
+    right: 40%;
+  }
+  .about input {
+    top: 66.5%;
+    right: 29%;
+    width: 40vw;
+    padding: 8px 5px;
+    /* border-radius: 15px; */
+  }
+  #blank-message {
+    position: absolute;
+    top: 70%;
+    color: red;
+    display: none;
+    font-size: small;
+    right: 35%;
+  }
+  .about button {
+    top: 75%;
+    right: 55%;
+    padding: 3px;
+    height: 3.4vh;
+    width: 13vw;
+    border: none;
+  }
+  footer {
+    padding: 5px 4px;
+  }
+  footer h6 {
+    font-size: 30px;
+  }
+  .footer-links {
+    gap: 7px;
+  }
+  .footer-links a {
+    font-size: 7px;
+  }
 }
