@@ -635,3 +635,13 @@ footer a {
 }
 
 /* for mobile  */
+@media(max-width:400px){
+
+.headings h1{
+  font-size:2em;
+}
+  .headings h2{
+    font-size:0.4em;
+  }
+  
+}
